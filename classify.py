@@ -30,7 +30,7 @@ def classify_csv(input_file):
     output_file = input_file.split('/')[0] + "/classified.csv"
     df.to_csv(output_file, index=False)
 
-    return output_file
+    return df
 
 if __name__ == '__main__':
     classify_csv("resources/test.csv")
